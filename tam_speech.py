@@ -95,7 +95,7 @@ sampler = PointCloudSampler(
 print("Is CUDA available:",torch.cuda.is_available())
 
 # Set a prompt to condition on.
-prompt = 'a red motorcycle'
+prompt = str(result.text)
 
 # Produce a sample from the model.
 samples = None
