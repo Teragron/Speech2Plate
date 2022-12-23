@@ -1,0 +1,8 @@
+aspose-3d
+Pillow
+torch
+wavio
+sounddevice
+scipy
+tqdm
+-e git+https://github.com/openai/whisper.git#egg=whisper
