@@ -94,6 +94,10 @@ Now you have 5 second to describe the desired Object.
 The first time you run all these commands, the script will start to download all necessary model files. It may take a while.
 Even if you don't plug the device to your 3D Printer, the script still going to create a .stl file that can be transferred via SD-Card. A Downside of using USB- Port is that the data transfer can be easily interrupted and the Port Connection is weak for processing .gcode data. If you have a Klipper or Oktopi Connection method that i can implement to this script via Raspberry Pi, i would be very happ to add that to this repository.
 
+# Plans
+
+I am planning to add a Dreambooth model to the script so that the VRAM requirements can be reduced and the fine-tuned images can have a style which is more compatible with the Image2PointCloud script of Point-E. (In style of corgi.jpg or cube_stack.jpg from point-e GitHub)
+
 #Disclaimer
 
 Be careful when using the script, the configuration file that i have provided is only for my 3D-Printer and might won't work for yours. The Bed and the Nozzle Temp. are both critical parameters when using the 3D-Printer and need to be set via the configuration.ini file. I take no responsibility for any damage caused by the user due to misuse of this script or any related prerequisites.
