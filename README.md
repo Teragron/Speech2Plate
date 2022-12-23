@@ -98,6 +98,6 @@ Even if you don't plug the device to your 3D Printer, the script still going to 
 
 I am planning to add a Dreambooth model to the script so that the VRAM requirements can be reduced and the fine-tuned images can have a style which is more compatible with the Image2PointCloud script of Point-E. (In style of corgi.jpg or cube_stack.jpg from point-e GitHub)
 
-#Disclaimer
+# Disclaimer
 
 Be careful when using the script, the configuration file that i have provided is only for my 3D-Printer and might won't work for yours. The Bed and the Nozzle Temp. are both critical parameters when using the 3D-Printer and need to be set via the configuration.ini file. I take no responsibility for any damage caused by the user due to misuse of this script or any related prerequisites.
