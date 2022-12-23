@@ -29,7 +29,8 @@ conda create --name STP python==3.8.15
 conda activate STP
 ```
 
-2. Download this repository and extract it to your desired workflow folder
+2. Download this repository and extract it to your desired workflow folder, and install Git following this tutorial:
+https://www.geeksforgeeks.org/how-to-install-git-on-windows-command-line/
 
 3. Go to the newly created directory by running:
 
@@ -54,11 +55,40 @@ conda install pytorch torchvision torchaudio pytorch-cuda=11.7 -c pytorch -c nvi
 7. Install Jupyter Notebook by running:
 
 ```bash
-conda install -c anaconda ipykernel
+conda install jupyter notebook
+pip install jupyter
 ```
-8. To check whether the DL Libraries were installed correctly, open a new jupyter notebook and run this python script:
+8. To check whether the DL Libraries were installed correctly, open a new jupyter notebook and run this python script (This should return True):
 
  ```python
 import torch
 print("Is CUDA available:",torch.cuda.is_available())
+```
+After this is done, you can close the notebook tab.
+
+9. Now we will install three more important libraries, run this command in anaconda terminal:
+
  ```bash
+git clone https://github.com/kliment/Printrun.git
+git clone https://github.com/openai/point-e.git
+pip install ./point-e
+```
+
+10. Download the latest release of Slic3r Software:
+https://github.com/slic3r/Slic3r/releases/tag/1.3.0
+
+11. Now create a new folder named "slicer" in your workflow folder and extract everything that you've downloaded from the step 10 to this new "slicer" folder.
+
+12. Now you need a config.ini file for your 3D Printer, you can get this file by running slic3r.exe in the slicer folder and exporting the configuration for your printer.
+
+13. After getting the config.ini file, put this inside the main workflow folder and connect your printer to the PC/Laptop and make sure that you are using the right Serial Port. (For me it was COM3)
+
+13. Then simply type this command:
+```bash
+python tam_speech.py
+```
+
+Now you have 5 second to describe the desired Object.
+
+
+
