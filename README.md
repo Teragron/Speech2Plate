@@ -79,9 +79,9 @@ https://github.com/slic3r/Slic3r/releases/tag/1.3.0
 
 11. Now create a new folder named "slicer" in your workflow folder and extract everything that you've downloaded from the step 10 to this new "slicer" folder.
 
-12. Now you need a config.ini file for your 3D Printer, you can get this file by running slic3r.exe in the slicer folder and exporting the configuration for your printer.
+12. Now you need a my_config_file.ini file for your 3D Printer, you can get this file by running slic3r.exe in the slicer folder and exporting the configuration for your printer.
 
-13. After getting the config.ini file, put this inside the main workflow folder and connect your printer to the PC/Laptop and make sure that you are using the right Serial Port. (For me it was COM3)
+13. After getting the my_config_file.ini file, put this inside the main workflow folder and connect your printer to the PC/Laptop and make sure that you are using the right Serial Port. (For me it was COM3)
 
 13. Then simply type this command:
 ```bash
