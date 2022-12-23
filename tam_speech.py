@@ -159,7 +159,7 @@ scene = a3d.Scene.from_file(f"{filename}.ply")
 scene.save(f"{filename}.stl")
 
 
-subprocess.run(["slicer/slic3r-console", "--load", "my_config_file.ini", f"{filename}.stl"])
+subprocess.run(["slicer/slic3r-console", "--load", "my_config_file.ini", f"{filename}.stl", "--scale", "20"])
 try:
     p = printcore('COM3',115200) 
 except:
