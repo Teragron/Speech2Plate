@@ -42,7 +42,6 @@ cd desktop/Speech2Plate-main
 
 ```bash
 conda install jupyter notebook
-pip install jupyter
 ```
 
 5. Install the basic requirements with this command
