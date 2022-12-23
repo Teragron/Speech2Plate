@@ -35,7 +35,7 @@ https://www.geeksforgeeks.org/how-to-install-git-on-windows-command-line/
 3. Go to the newly created directory by running:
 
 ```bash
-cd desktop/Speech2Plate-master
+cd desktop/Speech2Plate-main
 ```
 
 4. Install the basic requirements with this command
