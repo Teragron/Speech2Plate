@@ -74,6 +74,7 @@ git clone https://github.com/kliment/Printrun.git
 git clone https://github.com/openai/point-e.git
 pip install ./point-e
 ```
+Put everthing inside the printrun folder to the main folder.
 
 10. Download the latest release of Slic3r Software:
 https://github.com/slic3r/Slic3r/releases/tag/1.3.0
