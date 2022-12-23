@@ -38,26 +38,28 @@ https://www.geeksforgeeks.org/how-to-install-git-on-windows-command-line/
 cd desktop/Speech2Plate-main
 ```
 
-4. Install the basic requirements with this command
-
-```bash
-pip install -r requirements.txt
-```
-
-5. Now install CUDA and CUDNN (Recommended Version: 11.7). You can follow the steps on this guide:
-https://medium.com/geekculture/install-cuda-and-cudnn-on-windows-linux-52d1501a8805
-
-6. Now install the Pytorch by running this command:
-
- ```bash
-conda install pytorch torchvision torchaudio pytorch-cuda=11.7 -c pytorch -c nvidia
-```
-7. Install Jupyter Notebook by running:
+4. Install Jupyter Notebook by running:
 
 ```bash
 conda install jupyter notebook
 pip install jupyter
 ```
+
+5. Install the basic requirements with this command
+
+```bash
+pip install -r requirements.txt
+```
+
+6. Now install CUDA and CUDNN (Recommended Version: 11.7). You can follow the steps on this guide:
+https://medium.com/geekculture/install-cuda-and-cudnn-on-windows-linux-52d1501a8805
+
+7. Now install the Pytorch by running this command:
+
+ ```bash
+conda install pytorch torchvision torchaudio pytorch-cuda=11.7 -c pytorch -c nvidia
+```
+
 8. To check whether the DL Libraries were installed correctly, open a new jupyter notebook and run this python script (This should return True):
 
  ```python
