@@ -29,7 +29,7 @@ conda create --name STP python==3.8.15
 conda activate STP
 ```
 
-2. Download this repository and extract it to your desired workflow folder.
+2. Download this repository and extract it to your desired workflow folder
 
 3. Go to the newly created directory by running:
 
@@ -44,4 +44,21 @@ pip install -r requirements.txt
 ```
 
 5. Now install CUDA and CUDNN (Recommended Version: 11.7). You can follow the steps on this guide:
-(https://medium.com/geekculture/install-cuda-and-cudnn-on-windows-linux-52d1501a8805)
+https://medium.com/geekculture/install-cuda-and-cudnn-on-windows-linux-52d1501a8805
+
+6. Now install the Pytorch by running this command:
+
+ ```bash
+conda install pytorch torchvision torchaudio pytorch-cuda=11.7 -c pytorch -c nvidia
+```
+7. Install Jupyter Notebook by running:
+
+```bash
+conda install -c anaconda ipykernel
+```
+8. To check whether the DL Libraries were installed correctly, open a new jupyter notebook and run this python script:
+
+ ```python
+import torch
+print("Is CUDA available:",torch.cuda.is_available())
+ ```bash
