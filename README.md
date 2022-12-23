@@ -91,5 +91,5 @@ python tam_speech.py
 
 Now you have 5 second to describe the desired Object.
 
-
+The first time you run all these commands, the script will start to download all necessary model files. It may take a while
 
