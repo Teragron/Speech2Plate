@@ -28,6 +28,11 @@ Before beginning, i encourage you to create a new conda environment specifically
 conda create --name STP python==3.8.15
 conda activate STP
 ```
+--------------------------------------------------------------
+1. (Optional first Step) If you want to run the script on a the temporary solution was to install the Stable Diffison. You can follow the Optimized SD installation steps from this github: 
+https://github.com/basujindal/stable-diffusion
+
+-------------------------------------------------------------
 
 2. Download this repository and extract it to your desired workflow folder, and install Git following this tutorial:
 https://www.geeksforgeeks.org/how-to-install-git-on-windows-command-line/
