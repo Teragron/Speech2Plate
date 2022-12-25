@@ -10,7 +10,7 @@ def extract_first_chars(sentence):
     first_chars = [word[0] for word in words]
     return ''.join(first_chars)
 
-filename = "corgi"
+filename = image_name
 
 
 from PIL import Image
@@ -55,7 +55,10 @@ print("Is CUDA available:",torch.cuda.is_available())
 
 
 # Load an image to condition on.
-img = Image.open(f'./point-e/point_e/examples/example_data/{image_name}.jpg')
+try:
+    img = Image.open(f'./point-e/point_e/examples/example_data/{image_name}.jpg')
+except:
+    img = Image.open(f'./point-e/point_e/examples/example_data/{image_name}.png)
 
 dim = (256, 256)
 width, height = img.size
@@ -64,11 +67,10 @@ if (width, height) != dim:
     img = img.resize(dim)
     img = img.convert('RGB')
     img.save(f'./point-e/point_e/examples/example_data/{image_name}.jpg')
-else:
-    # Produce a sample from the model.
-    samples = None
-    for x in tqdm(sampler.sample_batch_progressive(batch_size=1, model_kwargs=dict(images=[img]))):
-        samples = x
+
+samples = None
+for x in tqdm(sampler.sample_batch_progressive(batch_size=1, model_kwargs=dict(images=[img]))):
+    samples = x
 
 pc = sampler.output_to_point_clouds(samples)[0]
 # fig = plot_point_cloud(pc, grid_size=3, fixed_bounds=((-0.75, -0.75, -0.75),(0.75, 0.75, 0.75)))
