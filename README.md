@@ -31,7 +31,7 @@ conda activate STP
 --------------------------------------------------------------
 1. (Optional first Step) If you want to run the script on a Low VRAM Computer, the temporary solution for me was to install the Stable Diffison. You can follow the Optimized SD installation steps from this github: 
 https://github.com/basujindal/stable-diffusion
-
+(Note) If you start with this optimized step you also need to extract and place all the files to the Stable Diffusion folder. During this process, i recommend you not to replace the same named files on the Stable diffusion folder.
 -------------------------------------------------------------
 
 2. Download this repository and extract it to your desired workflow folder, and install Git following this tutorial:
