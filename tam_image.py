@@ -58,7 +58,7 @@ print("Is CUDA available:",torch.cuda.is_available())
 try:
     img = Image.open(f'{image_name}.jpg')
 except:
-    img = Image.open(f'{image_name}.png)
+    img = Image.open(f'{image_name}.png')
 
 dim = (256, 256)
 width, height = img.size
