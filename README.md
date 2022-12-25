@@ -29,7 +29,7 @@ conda create --name STP python==3.8.15
 conda activate STP
 ```
 --------------------------------------------------------------
-1. (Optional first Step) If you want to run the script on a the temporary solution was to install the Stable Diffison. You can follow the Optimized SD installation steps from this github: 
+1. (Optional first Step) If you want to run the script on a Low VRAM Computer, the temporary solution for me was to install the Stable Diffison. You can follow the Optimized SD installation steps from this github: 
 https://github.com/basujindal/stable-diffusion
 
 -------------------------------------------------------------
