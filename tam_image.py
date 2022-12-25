@@ -121,8 +121,7 @@ with open(f'{filename}.ply', 'wb') as f:
     
 import subprocess
 import aspose.threed as a3d
-from printrun.printcore import printcore
-from printrun import gcoder
+
 
 
 scene = a3d.Scene.from_file(f"{filename}.ply")
@@ -130,6 +129,10 @@ scene.save(f"{filename}.stl")
 
 
 subprocess.run(["slicer/slic3r-console", "--load", "my_config_file.ini", f"{filename}.stl", "--scale", "20"])
+
+from printrun.printcore import printcore
+from printrun import gcoder
+
 try:
     p = printcore('COM3',115200) 
 except:
