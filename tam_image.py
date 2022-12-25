@@ -56,9 +56,9 @@ print("Is CUDA available:",torch.cuda.is_available())
 
 # Load an image to condition on.
 try:
-    img = Image.open(f'./point-e/point_e/examples/example_data/{image_name}.jpg')
+    img = Image.open(f'{image_name}.jpg')
 except:
-    img = Image.open(f'./point-e/point_e/examples/example_data/{image_name}.png)
+    img = Image.open(f'{image_name}.png)
 
 dim = (256, 256)
 width, height = img.size
@@ -66,7 +66,7 @@ width, height = img.size
 if (width, height) != dim:
     img = img.resize(dim)
     img = img.convert('RGB')
-    img.save(f'./point-e/point_e/examples/example_data/{image_name}.jpg')
+    img.save(f'{image_name}.jpg')
 
 samples = None
 for x in tqdm(sampler.sample_batch_progressive(batch_size=1, model_kwargs=dict(images=[img]))):
@@ -129,7 +129,7 @@ scene = a3d.Scene.from_file(f"{filename}.ply")
 scene.save(f"{filename}.stl")
 
 
-subprocess.run(["slicer/slic3r-console", "--load", "my_config_file.ini", f"{filename}.stl"])
+subprocess.run(["slicer/slic3r-console", "--load", "my_config_file.ini", f"{filename}.stl", "--scale", "20"])
 try:
     p = printcore('COM3',115200) 
 except:
