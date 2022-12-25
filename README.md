@@ -34,6 +34,7 @@ https://github.com/basujindal/stable-diffusion
 
 (Note)
 If you start with this optimized step you also need to extract and place all the files to the Stable Diffusion folder. During this process, i recommend you not to replace the same named files on the Stable diffusion folder.
+
 -------------------------------------------------------------
 
 2. Download this repository and extract it to your desired workflow folder, and install Git following this tutorial:
