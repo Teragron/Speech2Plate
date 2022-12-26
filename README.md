@@ -97,8 +97,13 @@ https://github.com/slic3r/Slic3r/releases/tag/1.3.0
 python tam_speech.py
 ```
 
+For the low VRAM Version, run this command
+```bash
+python optimized_tam.py
+```
+-----------------------------------------------------
 Now you have 5 second to describe the desired Object.
-
+-----------------------------------------------------
 The first time you run all these commands, the script will start to download all necessary model files. It may take a while.
 Even if you don't plug the device to your 3D Printer, the script still going to create a .stl file that can be transferred via SD-Card. A Downside of using USB- Port is that the data transfer can be easily interrupted and the Port Connection is weak for processing .gcode data. If you have a Klipper or Oktopi Connection method that i can implement to this script via Raspberry Pi, i would be very happ to add that to this repository.
 
